@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de IVA — Prueba inicial DWEC</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 480px; margin: 2rem auto; padding: 0 1rem; }
+    label { display: block; margin-top: 1rem; font-weight: bold; }
+    input, select, button { margin-top: .25rem; padding: .5rem; font-size: 1rem; width: 100%; box-sizing: border-box; }
+    button { margin-top: 1.25rem; cursor: pointer; }
+    #resultado { margin-top: 1.5rem; padding: 1rem; border: 1px solid #ccc; border-radius: 8px; min-height: 3rem; }
+    .error { color: red; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Calculadora de IVA</h1>
+
+  <form id="form-iva" novalidate>
+    <label for="precio">Precio base (€)
+      <input type="number" id="precio" name="precio" step="0.01" min="0" placeholder="Ej.: 100">
+    </label>
+
+    <label for="tipo-iva">Tipo de IVA
+      <select id="tipo-iva" name="tipo-iva">
+        <option value="21">General: 21%</option>
+        <option value="10">Reducido: 10%</option>
+        <option value="4">Superreducido: 4%</option>
+      </select>
+    </label>
+
+    <button type="button" id="btn-calcular">Calcular</button>
+  </form>
+
+  <div id="resultado" aria-live="polite"></div>
+
+  <script>
+    document.getElementById('btn-calcular').addEventListener('click', function () {
+      const precioInput = document.getElementById('precio');
+      const tipoSelect = document.getElementById('tipo-iva');
+      const resultado = document.getElementById('resultado');
+
+      // Lectura de los valores introducidos mediante JavaScript
+      const precio = parseFloat(precioInput.value);
+      const tipoIva = parseFloat(tipoSelect.value);
+
+      console.log('[Prueba-Inicial] Precio introducido:', precioInput.value);
+      console.log('[Prueba-Inicial] Tipo de IVA seleccionado:', tipoIva + '%');
+
+      // Validación: el precio debe ser un número válido y estrictamente mayor que cero
+      if (isNaN(precio) || precio <= 0) {
+        resultado.innerHTML = '<p class="error">⚠ El precio debe ser un número válido mayor que cero.</p>';
+        console.warn('[Prueba-Inicial] Validación fallida: precio no válido.');
+        return;
+      }
+
+      // Cálculos intermedios
+      const importeIva = precio * (tipoIva / 100);
+      const precioFinal = precio + importeIva;
+
+      console.log('[Prueba-Inicial] Importe del IVA:', importeIva.toFixed(2), '€');
+      console.log('[Prueba-Inicial] Precio final:', precioFinal.toFixed(2), '€');
+      // debugger; // Descomenta esta línea para dejar un punto de depuración: con las DevTools abiertas (F12) la ejecución se pausará aquí
+
+      // Inyección del desglose en el documento sin recargar la página
+      resultado.innerHTML =
+        '<p><strong>Desglose:</strong></p>' +
+        '<p>Precio base: ' + precio.toFixed(2) + ' €</p>' +
+        '<p>IVA (' + tipoIva + '%): ' + importeIva.toFixed(2) + ' €</p>' +
+        '<p><strong>Precio final: ' + precioFinal.toFixed(2) + ' €</strong></p>';
+    });
+  </script>
+</body>
+</html>
