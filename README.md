@@ -14,3 +14,9 @@ Repo donde iré subiendo los contenidos de mi 2º año en DAW.
 - `Proyecto-Intermodular-DAW/` - Proyecto
 
 Ver horario en [HORARIO.md](./HORARIO.md).
+
+## Profesorado
+
+| Asignatura | Profesor | Email |
+|---|---|---|
+| DWEC — Desarrollo Web Entorno Cliente | Carvajal | fcargar240@g.educaand.es |
