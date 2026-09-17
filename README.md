@@ -1,2 +1,16 @@
 # 2-DAW
-Repo donde ire subiendo los contenidos de mi 2 año en DAW
+
+Repo donde iré subiendo los contenidos de mi 2º año en DAW.
+
+## Estructura
+
+- `Desarrollo-Web-Entorno-Servidor/` - DWES
+- `Desarrollo-Web-Entorno-Cliente/` - DWEC
+- `Diseno-de-Interfaces-Web/` - DIWEB
+- `Despliegue-de-Aplicaciones/` - Despliegue
+- `Gestores-de-Contenido/` - Optativa
+- `Ingles-Profesional-GS/` - Inglés
+- `Itinerario-Personal-para-la-Empleabilidad-II/` - IPE II
+- `Proyecto-Intermodular-DAW/` - Proyecto
+
+Ver horario en [HORARIO.md](./HORARIO.md).
