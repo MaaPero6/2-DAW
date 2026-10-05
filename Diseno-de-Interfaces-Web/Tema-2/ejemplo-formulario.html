@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos Tablas</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Prueba Formularios</legend><br>
+            <label for="asignatura">Asignatura: </label>
+            <input id="asignatura" type="text">
+            <br><br>
+
+            <label for="hora">Horas: </label>
+            <select id="hora">
+                <optgroup label="Mañana:">
+                    <option>Primera</option>
+                    <option>Segunda</option>
+                    <option>Tercera</option>
+                    <option>Cuarta</option>
+                    <option>Quinta</option>
+                    <option>Sexta</option>
+                </optgroup>
+                <optgroup label="Tarde:">
+                    <option>Primera</option>
+                    <option>Segunda</option>
+                    <option>Tercera</option>
+                    <option>Cuarta</option>
+                    <option>Quinta</option>
+                    <option>Sexta</option>
+                </optgroup>
+            </select><br><br>
+
+            <label>Curso: </label>
+            <input type="checkbox" value="26-27"> 2026-2027
+            <input type="checkbox" value="27-28"> 2027-2028
+            <br><br>
+
+            <label for="asignaturas">Elige tu asignatura: </label>
+            <input id="asignaturas" list="asignaturas">
+            <datalist>
+                <option value="Diseño Web">
+                <option value="Interfaces">
+                <option value="Despliegue">
+                <option value="Proyecto">
+                <option value="IPE">
+                <option value="Optativa">
+            </datalist><br><br>
+
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
