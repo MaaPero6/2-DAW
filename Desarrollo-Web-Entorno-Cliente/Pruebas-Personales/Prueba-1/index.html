@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio JS: Simulador de Combate por Turnos</title>
+</head>
+<body>
+	<div style="width: 1000px; height: 500px; overflow-y: auto; border: 2px solid #000; padding: 15px; box-sizing: border-box; margin-bottom: 25px;">
+		<h1>Ejercicio: Simulador de Combate en el Navegador</h1>
+
+		<section>
+			<h2>Objetivo</h2>
+			<p>
+				Crear una interfaz web interactiva donde el jugador pueda luchar contra un enemigo por turnos
+				haciendo clic en un botón, actualizando las estadísticas en pantalla mediante JavaScript.
+			</p>
+		</section>
+
+		<section>
+			<h2>Elementos que debe contener tu HTML</h2>
+			<ul>
+				<li>Un contenedor para el <strong>Jugador</strong> que muestre sus puntos de vida actuales.</li>
+				<li>Un contenedor para el <strong>Monstruo</strong> con sus puntos de vida actuales.</li>
+				<li>Un <strong>botón</strong> de acción (por ejemplo: <code>&lt;button id="btn-atacar"&gt;Atacar&lt;/button&gt;</code>).</li>
+				<li>Una sección o lista para el <strong>registro de combate</strong> (log de mensajes).</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Lógica a implementar en JavaScript</h2>
+			<ol>
+				<li>
+					<strong>Estado inicial:</strong>
+					Ambos combatientes comienzan con 100 puntos de vida.
+				</li>
+				<li>
+					<strong>Acción al hacer clic en el botón:</strong>
+					<ul>
+						<li>El jugador inflige un daño aleatorio entre 5 y 20 al monstruo.</li>
+						<li>Se actualiza la vida visual del monstruo en la interfaz.</li>
+						<li>Se añade un mensaje al log indicando el ataque.</li>
+					</ul>
+				</li>
+				<li>
+					<strong>Comprobación de victoria:</strong>
+					Si la vida del monstruo llega a 0 (o menos), se anuncia la victoria y se deshabilita el botón de ataque.
+				</li>
+				<li>
+					<strong>Turno del monstruo:</strong>
+					Si el monstruo sobrevive, contraataca causando entre 8 y 18 de daño al jugador, actualizando su vida en pantalla.
+				</li>
+				<li>
+					<strong>Comprobación de derrota:</strong>
+					Si la vida del jugador llega a 0 (o menos), se anuncia la derrota y se deshabilita el botón.
+				</li>
+			</ol>
+		</section>
+
+		<section>
+			<h2>Reto extra (opcional)</h2>
+			<p>
+				Añadir un botón de <strong>"Reiniciar combate"</strong> que vuelva a poner las vidas a 100,
+				limpie el historial de mensajes y reactive el botón de ataque.
+			</p>
+		</section>
+	</div>
+
+	<!-- Puntos de vida -->
+	<p>Vida Jugador: <span id="vida-jugador">100</span></p>
+  	<p>Vida Monstruo: <span id="vida-monstruo">100</span></p>
+
+	<!-- Botón de acción -->
+  	<button id="btn-atacar">Atacar</button>
+
+	<!-- Texto donde contarás qué pasa -->
+  	<p id="mensaje">¡Empieza el combate!</p>
+
+	<script src="script.js"></script>
+</body>
+</html>
