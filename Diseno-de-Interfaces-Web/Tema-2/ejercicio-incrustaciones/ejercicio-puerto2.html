@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <title>Ejercicio Puerto Algeciras parte 2</title>
-
   <style>
     body {
-      background-color: linen;
+      background-color: rgb(245, 216, 188);
       font-family: Arial, sans-serif;
     }
 
@@ -19,50 +18,59 @@
       color: maroon;
     }
 
+    p {
+      color: #333333;
+      font-size: 16px;
+    }
+
     section {
-      background-color: white;
-      border: 1px solid gray;
+      background-color: rgb(221, 221, 221);
+      border: 5px solid rgb(14, 14, 14);
       margin: 15px;
       padding: 10px;
     }
+
+    #miCanvas {
+      border: 3px dashed gray;
+    }
   </style>
 </head>
-
 <body>
-  <h1>Continuacion del ejercicio</h1>
 
-  <!-- Incrustación de contenido externo utilizando plugins
-    <embed src="contenido.swf">
-  Obsoleto: Los archivos .swf dependían de Adobe Flash, 
-  que fue retirado en 2020 por graves fallos de seguridad y ya no es soportado por ningún navegador moderno. -->
+  <header>
+    <h1>Continuación del ejercicio</h1>
+  </header>
 
-  <!-- Incrustación de contenido multimedia o plugins
-    <object data="contenido.swf" type="application/x-shockwave-flash"></object>
-  Obsoleto: Los archivos .swf dependían de Adobe Flash, 
-  que fue retirado en 2020 por graves fallos de seguridad y ya no es soportado por ningún navegador moderno. -->
+  <main>
+    <section>
+      <h2>Incrustación de contenido externo utilizando plugins (embed)</h2>
+      <!-- Obsoleto con .swf (Flash retirado en 2020). Uso moderno con PDF -->
+      <embed src="recursos/Carta_Servicios_APBA.pdf" width="800" height="600" type="application/pdf">
+    </section>
 
-  <h2>Incrustación de contenido externo utilizando plugins</h2>
-  <embed src="recursos/Carta_Servicios_APBA.pdf" width="800" height="600">
+    <section>
+      <h2>Incrustación de contenido multimedia o plugins (object)</h2>
+      <!-- Obsoleto con .swf (Flash retirado en 2020). Uso moderno con SVG -->
+      <object data="recursos/boat.svg" type="image/svg+xml" width="400" height="300"></object>
+    </section>
 
-  <hr>
-  <h2>Incrustación de contenido multimedia o plugins</h2>
-  <object data="recursos/boat.svg" type="image/svg+xml" width="400" height="300"></object>
+    <section>
+      <h2>Incrustación de un lienzo para dibujar gráficos (canvas)</h2>
+      <!-- La etiqueta <canvas> solo reserva el lienzo en blanco en el DOM; en HTML puro permanece vacía porque requiere JavaScript para renderizar y dibujar gráficos. -->
+      <canvas id="miCanvas" width="200" height="200">Tu navegador no soporta canvas.</canvas>
+    </section>
 
-  <!-- Incrustación de un lienzo para dibujar gráficos
-    <canvas id="miCanvas" width="200" height="200"></canvas>
-  La etiqueta <canvas> solo reserva el lienzo en blanco en el DOM; en HTML puro permanece vacía porque requiere JavaScript para renderizar y dibujar gráficos. -->
+    <section>
+      <h2>Incrustación de gráficos vectoriales escalables</h2>
+      <svg width="400" height="180">
+        <rect x="50" y="20" width="300" height="100" style="fill:rgba(255, 0, 0, 0.658)" />
+      </svg>
+    </section>
 
-  <hr>
-
-  <h2>Incrustación de gráficos vectoriales escalables</h2>
-  <svg width="400" height="180">
-    <rect x="50" y="20" width="300" height="200" style="fill:rgba(255, 0, 0, 0.658)" />
-  </svg>
-
-  <hr>
-
-  <p>Para la volver a la pagina anterior <a href="ejercicio-puerto.html">pulsa aqui</a></p>
+    <nav>
+      <p>Para volver a la página anterior <a href="ejercicio-puerto.html">pulsa aquí</a></p>
+    </nav>
+  </main>
 
 </body>
-
 </html>

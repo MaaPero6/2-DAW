@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Ejercicio Puerto Algecitas</title>
+  <title>Ejercicio Puerto Algeciras</title>
   <style>
     body {
-      background-color: linen;
+      background-color: rgb(245, 216, 188);
       font-family: Arial, sans-serif;
     }
 
@@ -24,37 +24,48 @@
     }
 
     section {
-      background-color: white;
-      border: 1px solid gray;
+      background-color: rgb(221, 221, 221);
+      border: 5px solid rgb(14, 14, 14);
       margin: 15px;
       padding: 10px;
     }
   </style>
 </head>
 <body>
-  <h1>Ejercicio del Puerto usando incrustaciones</h1>
 
-  <h2>Incrustación de una imagen</h2>
-  <img src="recursos/fotoBarco.jpg" alt="Foto de un barco del puerto">
+  <header>
+    <h1>Ejercicio del Puerto usando incrustaciones</h1>
+  </header>
 
-  <hr>
+  <main>
+    <section>
+      <h2>Incrustación de una imagen</h2>
+      <img src="recursos/fotoBarco.jpg" alt="Foto de un barco del puerto">
+    </section>
 
-  <h2>Incrustación de un video</h2>
-  <video src="recursos/videoPuerto.mp4" controls></video>
+    <section>
+      <h2>Incrustación de un video</h2>
+      <video controls width="600">
+        <source src="recursos/videoPuerto.mp4" type="video/mp4">
+      </video>
+    </section>
 
-  <hr>
+    <section>
+      <h2>Incrustación de un audio</h2>
+      <audio controls>
+        <source src="recursos/melodia.mp3" type="audio/mpeg">
+      </audio>
+    </section>
 
-  <h2>Incrustación de un audio</h2>
-  <audio src="recursos/melodia.mp3" controls></audio>
-  <hr>
+    <section>
+      <h2>Incrustación de una página web externa</h2>
+      <iframe src="https://www.puertosdeandalucia.es/puertos/puertos/cadiz/puerto-de-algeciras" width="800" height="600"></iframe>
+    </section>
 
-  <h2>Incrustación de una página web externa</h2>
-  <iframe src="https://www.puertosdeandalucia.es/puertos/puertos/cadiz/puerto-de-algeciras" width="800" height="600"></iframe>
-
-  <hr>
-
-  <p>Para la siguente pagina <a href="ejercicio-puerto2.html">pulsa aqui</a></p>
+    <nav>
+      <p>Para la siguiente página <a href="ejercicio-puerto2.html">pulsa aquí</a></p>
+    </nav>
+  </main>
 
 </body>
-
 </html>
