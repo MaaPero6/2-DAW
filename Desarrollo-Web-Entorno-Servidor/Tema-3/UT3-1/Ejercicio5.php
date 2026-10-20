@@ -13,7 +13,7 @@
     <table border="1">
         <?php
             $numero = 0;
-            for ($fila = 0; $fila < 5000; $fila++) {
+            for ($fila = 0; $fila < 50000; $fila++) {
                 echo "<tr>";
                 for ($columna = 0; $columna < 10; $columna++) {
                     echo "<td>&#" . $numero . ";</td>";

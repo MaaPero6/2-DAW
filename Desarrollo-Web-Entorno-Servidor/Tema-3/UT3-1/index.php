@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="utf-8">
-    <title>Práctica Personal</title>
+    <title>Indice UT3-1</title>
 </head>
 <body>
     <h1>Indice de ejercicios UT3-1</h1>
