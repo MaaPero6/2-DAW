@@ -33,6 +33,10 @@
     #miCanvas {
       border: 3px dashed gray;
     }
+
+    a{
+      color:rgb(255, 0, 0);
+    }
   </style>
 </head>
 <body>
@@ -58,6 +62,15 @@
       <h2>Incrustación de un lienzo para dibujar gráficos (canvas)</h2>
       <!-- La etiqueta <canvas> solo reserva el lienzo en blanco en el DOM; en HTML puro permanece vacía porque requiere JavaScript para renderizar y dibujar gráficos. -->
       <canvas id="miCanvas" width="200" height="200">Tu navegador no soporta canvas.</canvas>
+      
+      <!-- Ejemplo extraido de w3school-->
+      <script>
+        const canvas = document.getElementById("miCanvas");
+        const ctx = canvas.getContext("2d");
+
+        ctx.fillStyle = "blue";
+        ctx.fillRect(20, 20, 150, 100);
+      </script>
     </section>
 
     <section>

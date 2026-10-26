@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<title>Galería de fotos</title>
+<style>
+  body{
+    background-color: rgb(53, 10, 153);
+    color: rgb(255, 255, 255);
+    font-family:system-ui;
+    margin:1rem
+  }
+
+  .grid{
+    display:grid;
+    gap:1rem;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  }
+
+  figure{
+    margin:0;border:1px solid #ddd;
+    padding:.5rem;
+    border-radius:4px
+  }
+
+  figcaption{
+    text-align:center;
+    margin-top:.4rem;
+    font-size:.9rem;
+    color:#ffffff
+  }
+
+  img {
+    width: 100%;             /* Ocupa todo el ancho de su tarjeta o celda */
+    height: 250px;           /* Altura fija uniforme para todas las fotos */
+    object-fit: cover;       /* Recorta sin deformar ni perder proporción */
+    display: block;          /* Elimina un pequeño espacio en blanco inferior que dejan las imágenes por defecto */
+  }
+
+  a{
+      color:rgb(200, 200, 200);
+  }
+</style>
+</head>
+
+<body>
+  <h1>Archivo de Capturas - Observatorio Astronómico Central</h1>
+  <section class="grid">
+    <figure>
+      <img src="images/photo1.jpg" alt="Superficie craterizada de Fobos con Marte de fondo"/>
+      <figcaption>Fobos en tránsito marciano (Cámara CCD-4)</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/photo2.jpg" alt="Detalle en alta resolución del cráter Stickney en Fobos" />
+      <figcaption>Cráter Stickney al atardecer solar</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/photo3.jpg" alt="Estructura de filamentos de gas en la Nebulosa de Orión" />
+      <figcaption>Núcleo de la Nebulosa de Orión (Filtro H-alfa)</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/photo4.jpg" alt="Los anillos de Saturno vistos en ángulo de inclinación máxima" />
+      <figcaption>Saturno y división de Cassini</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/photo5.jpg" alt="Arco brillante de la Vía Láctea sobre la cúpula del observatorio" />
+      <figcaption>Cúpula norte bajo el centro galáctico</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/photo6.jpg" alt="Disco solar con llamaradas y manchas solares activas" />
+      <figcaption>Actividad solar en banda estrecha</figcaption>
+    </figure>
+  </section>
+  <p>Para volver al indice, pulsa <a href = "../index.html" >aqui</a></p>
+</body>
+</html>

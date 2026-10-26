@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Horarios de tren</title>
+  <style>
+    body {
+      background-color: rgb(53, 10, 153);
+      color: rgb(255, 255, 255);
+      font-family: system-ui; 
+      width: 60%;
+      max-width: 800px;
+      margin: 20px auto;
+      max-width:1500px
+    }
+
+    table{
+      background-color: purple;
+      border-collapse:collapse;
+      font-family:system-ui;
+      margin: 20px auto
+    }
+
+    th,td{
+      border:1px solid #4a1c94;
+      padding:15px 50px;
+      text-align:center
+    }
+
+    thead th{
+      background:#923bbb
+    }
+
+    tfoot td{
+      background:#923bbb;font-weight:600
+    }
+
+    a{
+      color:rgb(200, 200, 200);
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <caption>Calendario de seguimiento astronómico - Observatorio Central</caption>
+    <thead>
+      <tr>
+        <th rowspan="2">Sector</th>
+        <th rowspan="2">Objetivo</th>
+        <th colspan="3">Ventana de visibilidad</th>
+      </tr>
+      <tr>
+        <th>Mañana</th><th>Tarde</th><th>Noche</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr><td rowspan="2">Sol-Int</td><td>Luna y Fobos</td><td>06:15</td><td>14:20</td><td>21:40</td></tr>
+      <tr><td>Marte/MMX</td><td>07:30</td><td>16:05</td><td>23:15</td></tr>
+
+      <tr><td>Deep-Sky</td><td>Nebulosa de Orion</td><td>05:00</td><td>18:45</td><td>01:30</td></tr>
+    </tbody>
+
+    <tfoot>
+      <tr><td colspan="5">Visibilidad condicionada por la nubosidad y la fase lunar</td></tr>
+    </tfoot>
+  </table>
+
+  <p>Para volver al indice, pulsa <a href = "index.html" >aqui</a></p>
+</body>
+</html>

@@ -1,0 +1,242 @@
+﻿1
+00:00:00,451 --> 00:00:03,201
+(dramatic music)
+
+2
+00:00:08,010 --> 00:00:10,340
+- [Narrator] Seasons change even on Mars.
+
+3
+00:00:10,340 --> 00:00:13,240
+A look at how NASA's
+Explorer study the weather
+
+4
+00:00:13,240 --> 00:00:14,980
+and cope with change,
+
+5
+00:00:14,980 --> 00:00:18,370
+especially in the case of
+the Ingenuity helicopter,
+
+6
+00:00:18,370 --> 00:00:21,453
+which now has to fly in
+a thinner atmosphere.
+
+7
+00:00:22,810 --> 00:00:25,940
+This visualization, known as NASA's Eyes,
+
+8
+00:00:25,940 --> 00:00:28,300
+shows where the agencies two rovers
+
+9
+00:00:28,300 --> 00:00:30,910
+and lander are touring the planet.
+
+10
+00:00:30,910 --> 00:00:32,730
+For most of them, measuring the weather
+
+11
+00:00:32,730 --> 00:00:34,713
+is a key part of their job.
+
+12
+00:00:35,930 --> 00:00:38,000
+It's early summer in Jezero crater
+
+13
+00:00:38,000 --> 00:00:39,730
+where NASA's Perseverance rover
+
+14
+00:00:39,730 --> 00:00:41,950
+and the Ingenuity helicopter are exploring
+
+15
+00:00:41,950 --> 00:00:43,720
+the South Seitahr region.
+
+16
+00:00:43,720 --> 00:00:47,520
+Perseverance uses its Mars
+Environmental Dynamic Analyzer,
+
+17
+00:00:47,520 --> 00:00:49,530
+or MEDA, to measure temperature,
+
+18
+00:00:49,530 --> 00:00:52,490
+humidity, wind speed, and direction.
+
+19
+00:00:52,490 --> 00:00:54,250
+These wind sensors also measure
+
+20
+00:00:54,250 --> 00:00:57,600
+the amount and size of dust
+particles in the atmosphere,
+
+21
+00:00:57,600 --> 00:01:00,030
+helping scientists
+understand the dust cycle
+
+22
+00:01:00,030 --> 00:01:02,420
+and its impact on weather.
+
+23
+00:01:02,420 --> 00:01:04,910
+MEDA also provides the
+Ingenuity helicopter
+
+24
+00:01:04,910 --> 00:01:08,130
+with critical pre-flight
+weather forecasts.
+
+25
+00:01:08,130 --> 00:01:11,630
+Recently, warmer temperatures
+and a thinning atmosphere
+
+26
+00:01:11,630 --> 00:01:13,810
+have made it more difficult
+for the helicopter
+
+27
+00:01:13,810 --> 00:01:16,310
+to generate enough lift to fly.
+
+28
+00:01:16,310 --> 00:01:18,030
+Its rotors had to spin faster
+
+29
+00:01:18,030 --> 00:01:19,740
+than they had in previous flights,
+
+30
+00:01:19,740 --> 00:01:23,430
+roughly 2,700 revolutions a minute.
+
+31
+00:01:23,430 --> 00:01:24,920
+In the Southern hemisphere,
+
+32
+00:01:24,920 --> 00:01:26,970
+where the Curiosity rover is driving
+
+33
+00:01:26,970 --> 00:01:29,470
+in Gale crater, it's early winter.
+
+34
+00:01:29,470 --> 00:01:31,900
+The Rover Environmental
+Monitoring Station,
+
+35
+00:01:31,900 --> 00:01:34,310
+REMs, provides daily weather reports
+
+36
+00:01:34,310 --> 00:01:36,260
+and takes regular dust surveys
+
+37
+00:01:36,260 --> 00:01:39,770
+to measure seasonal changes over time.
+
+38
+00:01:39,770 --> 00:01:41,920
+The InSight lander is focused on
+
+39
+00:01:41,920 --> 00:01:44,090
+what's happening below ground.
+
+40
+00:01:44,090 --> 00:01:46,620
+In September, it measured
+one of the biggest,
+
+41
+00:01:46,620 --> 00:01:49,690
+longest lasting Mars quakes ever detected.
+
+42
+00:01:49,690 --> 00:01:52,190
+Seismic waves from the magnitude 4.2
+
+43
+00:01:52,190 --> 00:01:55,650
+shook InSight for nearly
+an hour and a half.
+
+44
+00:01:55,650 --> 00:01:57,500
+Finally, the fleet of orbiters,
+
+45
+00:01:57,500 --> 00:02:00,480
+including Odyssey, the Mars
+Reconnaissance Orbiter,
+
+46
+00:02:00,480 --> 00:02:03,300
+and MAVEN help scientists
+understand the scope
+
+47
+00:02:03,300 --> 00:02:05,560
+and scale of storms from above.
+
+48
+00:02:05,560 --> 00:02:08,540
+MRO produces a daily global weather map
+
+49
+00:02:08,540 --> 00:02:11,460
+and provides us with amazing images.
+
+50
+00:02:11,460 --> 00:02:14,450
+If you're interested in
+dunes on other worlds,
+
+51
+00:02:14,450 --> 00:02:16,672
+check out these recent photos.
+
+52
+00:02:16,672 --> 00:02:18,130
+(upbeat music)
+
+53
+00:02:18,130 --> 00:02:19,410
+To get the latest updates,
+
+54
+00:02:19,410 --> 00:02:23,930
+follow @nasajpl and
+@nasamars on social media,
+
+55
+00:02:23,930 --> 00:02:26,480
+or take a deeper dive
+on the mission websites
+
+56
+00:02:26,480 --> 00:02:28,913
+at mars.nasa.gov.
+

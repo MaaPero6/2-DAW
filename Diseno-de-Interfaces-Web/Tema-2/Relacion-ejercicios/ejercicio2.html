@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Reserva de pista</title>
+
+  <style>
+    body {
+      background-color: rgb(53, 10, 153);
+      color: rgb(255, 255, 255);
+      font-family: system-ui; 
+      margin: 0 1rem;
+      max-width:600px
+    }
+
+    fieldset{
+      border:1px solid #ccc;
+      padding:1rem
+    }
+
+    label{
+      display:block;
+      margin-top:.7rem
+    }
+
+    a{
+      color:rgb(200, 200, 200);
+    }
+
+    input[type=range]{width:100%}
+  </style>
+</head>
+
+<body>
+  <h1>Reserva sesion de observacion astronomica</h1>
+
+  <form action="#" aria-describedby="ayuda-nivel">
+    <fieldset>
+      <legend>Datos de la sesion</legend>
+
+      <label>Nombre
+        <input type="text" name="nombre" required />
+      </label>
+
+      <label>E-mail
+        <input type="email" name="email" required />
+      </label>
+
+      <label>Fecha
+        <input type="date" name="fecha" required />
+      </label>
+
+      <p>Turno:</p>
+      <label><input type="radio" name="turno" value="mañana" required />Primer turno (Crepúsculo y Luna: 21:00 a 23:30)</label>
+      <label><input type="radio" name="turno" value="tarde"  required />Turno nocturno profundo (Cielo oscuro y Galaxias: 00:00 a 03:00)</label>
+
+      <label>Experiencia con telescopios (1 aficionado con prismáticos – 10 astrofotógrafo pro)
+        <input type="range" name="nivel" min="1" max="10" value="5" aria-describedby="nivel-de-asistencia" />
+      </label>
+      <small id="ayuda-nivel">Sirve para calibrar la asistencia del personal técnico y el tipo de montura asignada.</small>
+
+      <label>
+        <input type="checkbox" name="seguro" />Incluir alquiler de cámara CCD y filtros de banda estrecha
+      </label>
+    </fieldset>
+
+    <p><button type="submit">Confirmar reserva de la sesion.</button></p>
+  </form>
+
+  <p>Para volver al indice, pulsa <a href = "index.html" >aqui</a></p>
+</body>
+</html>

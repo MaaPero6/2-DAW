@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<title>En proceso...</title>
+<style>
+  @keyframes flotar{
+    0%{
+      transform:translateY(0);
+      opacity:0
+    }
+
+    50%{
+      opacity:1
+    }
+
+    100%{
+      transform:translateY(-8px);
+      opacity:0
+    }
+  }
+  body{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    font-family:system-ui;
+    background-color: rgb(53, 10, 153);
+    color: rgb(255, 255, 255);
+    margin:0
+  }
+
+  h1{
+    font-size:4rem;
+    margin:0;
+    animation:flotar 5s ease-out forwards
+  }
+
+  a{
+    margin-top:1.5rem;
+    font-size:1.2rem;
+    text-decoration:none;
+    border:1px solid #aa2dc4;
+    padding:.6rem 1.2rem;
+    border-radius:4px;
+    color: rgb(255, 255, 255);
+    transition:background .3s
+  }
+  a:hover,a:focus{
+    background:#aa2dc4;
+    color: rgb(255, 255, 255);
+    }
+</style>
+</head>
+
+<body>
+  <h1>Seguimos explorando...</h1>
+  <p>Nuevos planetas proximamente</p>
+  <a href="index.html">Volver al inicio</a>
+</body>
+</html>

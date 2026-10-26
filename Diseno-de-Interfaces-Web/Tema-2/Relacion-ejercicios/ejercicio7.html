@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<title>Tarjetas de producto</title>
+<style>
+  body{
+    font-family:system-ui;
+    margin:1rem;
+    display:grid;
+    gap:1rem;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr))
+  }
+  .card{
+    border:2px solid;
+    padding:1rem;
+    border-radius:6px
+  }
+  [data-category="tecnología"]{border-color:#4078f2}
+  [data-category="hogar"]     {border-color:#d97706}
+  [data-category="deporte"]   {border-color:#059669}
+  .precio{font-weight:700}
+</style>
+</head>
+<body>
+  <article class="card" data-category="tecnología">
+    <h2>Auriculares Bluetooth</h2>
+    <p class="precio">39 €</p>
+    <p>Sonido Hi‑Fi y cancelación de ruido.</p>
+  </article>
+
+  <article class="card" data-category="hogar">
+    <h2>Aspiradora Robot</h2>
+    <p class="precio">189 €</p>
+    <p>Limpieza inteligente con app móvil.</p>
+  </article>
+
+  <article class="card" data-category="deporte">
+    <h2>Esterilla Yoga Pro</h2>
+    <p class="precio">25 €</p>
+    <p>Antideslizante, 6 mm grosor.</p>
+  </article>
+</body>
+</html>
