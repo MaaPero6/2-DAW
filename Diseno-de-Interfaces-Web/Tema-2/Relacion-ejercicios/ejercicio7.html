@@ -2,43 +2,66 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8"/>
-<title>Tarjetas de producto</title>
+<title>Tienda de Astronomía y Equipo de Observación</title>
 <style>
   body{
+    background-color: rgb(53, 10, 153);
+    color: rgb(255, 255, 255);
     font-family:system-ui;
-    margin:1rem;
+  }
+
+  article{
     display:grid;
     gap:1rem;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr))
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    margin-bottom: 1.5rem
   }
+
   .card{
     border:2px solid;
     padding:1rem;
     border-radius:6px
   }
-  [data-category="tecnología"]{border-color:#4078f2}
-  [data-category="hogar"]     {border-color:#d97706}
-  [data-category="deporte"]   {border-color:#059669}
-  .precio{font-weight:700}
+  [data-category="optica"]{
+    border-color:#4078f2
+  }
+
+  [data-category="astrofotografia"]{
+    border-color:#d97706}
+
+  [data-category="accesorios"]{
+    border-color:#059669
+  }
+
+  .precio{
+    font-weight:700
+  }
 </style>
 </head>
+
 <body>
-  <article class="card" data-category="tecnología">
-    <h2>Auriculares Bluetooth</h2>
-    <p class="precio">39 €</p>
-    <p>Sonido Hi‑Fi y cancelación de ruido.</p>
-  </article>
+  <h1>Tienda de Astronomía y Equipo de Observación:</h1>
 
-  <article class="card" data-category="hogar">
-    <h2>Aspiradora Robot</h2>
-    <p class="precio">189 €</p>
-    <p>Limpieza inteligente con app móvil.</p>
-  </article>
+  <section class="grid">
+    <article class="card" data-category="optica">
+      <h2>Ocular Plössl 10mm</h2>
+      <p class="precio">45€</p>
+      <p>Alta definición y campo aparente de 52º para observación lunar.</p>
+    </article>
 
-  <article class="card" data-category="deporte">
-    <h2>Esterilla Yoga Pro</h2>
-    <p class="precio">25 €</p>
-    <p>Antideslizante, 6 mm grosor.</p>
-  </article>
+    <article class="card" data-category="astrofotografia">
+      <h2>Filtro Lunar y Contaminación</h2>
+      <p class="precio">32€</p>
+      <p>Reduce el brillo excesivo y resalta el relieve de los cráteres.</p>
+    </article>
+
+   <article class="card" data-category="accesorios">
+      <h2>Linterna de Luz Roja Estelar</h2>
+      <p class="precio">16€</p>
+      <p>Preserva la adaptación de la visión nocturna en plena oscuridad.</p>
+    </article>
+  </section>
+
+  <p>Para volver al indice, pulsa <a href = "index.html" >aqui</a></p>
 </body>
 </html>

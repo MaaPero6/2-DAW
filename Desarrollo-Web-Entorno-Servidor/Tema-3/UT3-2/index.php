@@ -3,6 +3,12 @@
 <head>
     <meta charset="utf-8">
     <title>Indice UT3-2</title>
+    <style>
+        body{
+            background-color:rgb(201, 201, 201);
+            line-height: 2;
+        }
+    </style>
 </head>
 <body>
     <h1>Indice de ejercicios UT3-2</h1>

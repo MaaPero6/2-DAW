@@ -4,6 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Ejercicio 1</title>
+    <style>
+        body{
+            background-color:rgb(201, 201, 201);
+            line-height: 2;
+        }
+    </style>
 </head>
 
 <body>
